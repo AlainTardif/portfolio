@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2? family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap");
-
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   border: 0;
 }
-
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Abril Fatface", cursif;
   font-family: "Poppins", sans-serif;
   background: #f1f1f1;
 }
@@ -23,7 +22,8 @@ body {
   width: 300px;
   height: 100vh;
   min-height: 800px;
-  background: rgb(70, 51, 51);
+  background: #333;
+  /* background: rgb(70, 51, 51); */
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ body {
   color: #f1f1f1;
 }
 .bloc-menu span::after {
-  content: '';;
+  content: "";
   display: block;
   width: 0px;
   margin: 5px auto 0 auto;
@@ -64,5 +64,38 @@ body {
 
 /*---- PORTRAIT---- */
 
-.bloc-menu:nth-child(1) {}
-
+.bloc-menu:nth-child(1) {
+  width: 100%;
+  height: 25%;
+  background: #333;
+}
+.cer-portrait {
+  margin: 20px 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 26px 26px 53px #292929, -26px -26px 53px #3d3d3d;
+}
+.cer-portrait img {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-cercle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 40px;
+  cursor: pointer;
+}
+.logo-cercle img {
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
